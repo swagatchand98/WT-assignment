@@ -9,3 +9,6 @@
 2. You can also open any other .html file directly (for example, [about.html](about.html), [education.html](education.html), [styledPersonalweb.html](styledPersonalweb.html)).
 
 No installation or dependencies are required.
+
+Name - swagat saswat chand
+USN - 24BTRCT131 ( CSE* C ) 2nd year
