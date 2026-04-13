@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About swagat saswat chand</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+h2 {
+    color: darkgreen;
+    text-align: center;
+}
+hr {
+    border: 2px solid gray;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 id="aboutTitle">About Me</h1>
+<hr>
+
+<p id="intro" style="font-size:20px;">
+    <i>i am currently a pophomore student in jain university doing btech i have 1.5 yeah of experience in full stack developement, with skills</i>
+</p>
+
+<p id="interest">Name: swagat saswat chand | USN: 24BTRCT131 | Address: Electronic city phase 1 neeladri nagar 2nd cross</p>
+
+<!-- CLICK EVENT -->
+<button id="colorBtn">Change Text Color</button>
+
+<br><br>
+
+
+
+<h2>My Skills</h2>
+<ul id="skills" style="color: rgb(208, 55, 137);">
+    <li>Frontend: React, Next.js, React Native, TypeScript, JavaScript, Tailwind CSS, Framer Motion, Three.js</li>
+    <li>Backend: Node.js, Express.js, Go (Golang), Python (FastAPI), WebSocket, Redis</li>
+    <li>Databases: MongoDB, Firestore, DynamoDB, PostgreSQL, Prisma</li>
+    <li>Cloud &amp; DevOps: AWS (S3, EC2, Lambda, API Gateway, Cognito), Docker, Firebase</li>
+    <li>Tools: Git, Linux, VS Code, Stripe, Razorpay</li>
+</ul>
+
+<h2>Experience</h2>
+<ol id="projects" style="color: brown;">
+    <li>1.5 yeah of full stack developement experience.</li>
+</ol>
+
+<hr>
+
+<a href="index.html">Back to Home</a>
+
+<script>
+
+// 🔷 PAGE LOAD EVENT
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("About Page Loaded");
+});
+
+// 🔷 CLICK EVENT
+document.getElementById("colorBtn").addEventListener("click", function() {
+    document.getElementById("intro").style.color = "blue";
+});
+
+// 🔷 HOVER EVENTS ON SKILLS
+let skills = document.querySelectorAll("#skills li");
+
+skills.forEach(item => {
+    item.addEventListener("mouseover", function() {
+        this.style.color = "red";
+    });
+
+    item.addEventListener("mouseout", function() {
+        this.style.color = "rgb(208, 55, 137)";
+    });
+});
+
+// 🔷 DOUBLE CLICK EVENT (Projects)
+document.getElementById("projects").addEventListener("dblclick", function() {
+    this.style.backgroundColor = "lightyellow";
+});
+
+</script>
+
+</body>
+</html>

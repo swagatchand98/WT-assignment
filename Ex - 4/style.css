@@ -1,0 +1,195 @@
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #d1d5db;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 24px;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: #111827;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0 0 12px;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #eef2ff;
+}
+
+nav a:hover {
+  text-decoration: none;
+  background: #dbeafe;
+}
+
+header,
+nav,
+main,
+section,
+article,
+aside,
+footer,
+form,
+table {
+  width: 100%;
+}
+
+section,
+article,
+main,
+form,
+table,
+.card,
+.container {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.product-container > article {
+  flex: 1 1 220px;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 12px;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+  width: auto;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: var(--primary-hover);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #f9fafb;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
+
+  button,
+  input[type="submit"],
+  input[type="button"] {
+    width: 100%;
+  }
+}
+

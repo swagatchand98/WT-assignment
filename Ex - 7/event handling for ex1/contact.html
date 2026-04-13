@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact swagat saswat chand</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+h2 {
+    color: darkgreen;
+    text-align: center;
+}
+hr {
+    border: 2px solid gray;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 id="contactTitle">Contact Information</h1>
+
+<hr>
+
+<p id="email" style="color:blue;">Email: sahilkhedkar11@gmail.com</p>
+<p id="phone" style="color:green;">USN: 24BTRCT131</p>
+<p id="city" style="color:purple;">Address: Electronic city phase 1 neeladri nagar 2nd cross</p>
+
+<!-- CLICK EVENT -->
+<button id="btn">Click for Message</button>
+
+<br><br>
+
+
+<hr><br>
+
+<a href="index.html">Back to Home</a>
+
+<script>
+
+// 🔷 PAGE LOAD EVENT
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Contact Page Loaded");
+});
+
+// 🔷 CLICK EVENT
+document.getElementById("btn").addEventListener("click", function() {
+    alert("Thank you for visiting my contact page!");
+});
+
+// 🔷 HOVER EVENTS
+document.getElementById("email").addEventListener("mouseover", function() {
+    this.style.color = "red";
+});
+
+document.getElementById("email").addEventListener("mouseout", function() {
+    this.style.color = "blue";
+});
+
+
+
+</script>
+
+</body>
+</html>

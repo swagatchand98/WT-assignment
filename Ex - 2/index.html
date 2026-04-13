@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #f4f6f8;
+        }
+
+        section,
+        article,
+        form,
+        footer {
+            background: #ffffff;
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        input,
+        textarea,
+        button {
+            font: inherit;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            padding: 8px 10px;
+        }
+
+        button {
+            background: #2563eb;
+            color: #ffffff;
+            border: 0;
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>E-commerce</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+
+<section id="home">
+    <h2>Welcome to E-commerce</h2>
+</section>
+
+<hr>
+
+<section id="products">
+    <h2>Our Products</h2>
+
+    <article>
+        <figure>
+            <img src="smartphone.jpg" alt="Smart Phone" height="300px">
+            <figcaption><strong>Smart Phone</strong></figcaption>
+        </figure>
+        <p>Price: ₹1,49,999</p>
+        <button>Add to cart</button>
+    </article>
+
+    <hr>
+
+    <article>
+        <figure>
+            <img src="smartwatch.jpg" alt="Smart Watch" height="300px">
+            <figcaption><strong>Smart Watch</strong></figcaption>
+        </figure>
+        <p>Price: ₹3,999</p>
+        <button>Add to cart</button>
+    </article>
+
+    <hr>
+
+    <article>
+        <figure>
+            <img src="laptop.jpg" alt="Laptop" height="300px">
+            <figcaption><strong>Laptop</strong></figcaption>
+        </figure>
+        <p>Price: ₹1,53,999</p>
+        <button>Add to cart</button>
+    </article>
+
+</section>
+
+<hr>
+
+
+<section id="about">
+    <h2>About Us</h2>
+    <p style="text-align: center;">
+        Name: swagat saswat chand<br>
+        USN: 24BTRCT131<br>
+        Address: Electronic city phase 1 neeladri nagar 2nd cross
+    </p>
+    <p style="text-align: center;">
+        i am currently a pophomore student in jain university doing btech i have 1.5 yeah of experience in full stack developement, with skills Frontend: React, Next.js, React Native, TypeScript, JavaScript, Tailwind CSS, Framer Motion, Three.js
+    </p>
+    <p style="text-align: center;">
+        Backend: Node.js, Express.js, Go (Golang), Python (FastAPI), WebSocket, Redis<br>
+        Databases: MongoDB, Firestore, DynamoDB, PostgreSQL, Prisma<br>
+        Cloud &amp; DevOps: AWS (S3, EC2, Lambda, API Gateway, Cognito), Docker, Firebase<br>
+        Tools: Git, Linux, VS Code, Stripe, Razorpay
+    </p>
+</section>
+
+
+<hr>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <form action="#">
+       
+            
+            <caption>feedback form</caption>
+            <br>
+            <br>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+       
+    </form>
+</section>
+
+<hr>
+
+<footer>
+    <address>
+        Contact: sahilkhedkar11@gmail.com<br>
+        Address: Electronic city phase 1 neeladri nagar 2nd cross
+    </address>
+</footer>
+
+</body>
+</html>
